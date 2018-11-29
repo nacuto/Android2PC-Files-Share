@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidDisk</string>
+    <string name="MainActivityHint1">启动后可以从电脑端远程管理手机文件</string>
+    <string name="MainActivityHint2">请在“我的电脑”地址栏中输入：</string>
+    <string name="MainActivityStartBtn">&#xe6fd;    启动服务</string>
+    <string name="MainActivityStopBtn">&#xe71e;    停止服务</string>
+    <string name="MainActivityNoWifiBtn">无WLAN网络</string>
+    <string name="NoWifi">无WLAN网络，点击以查看WLAN设置</string>
+</resources>
