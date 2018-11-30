@@ -117,5 +117,9 @@
 
 #### 11/30 工作总结
 
-<img src="README_images\开启FTP.gif">
+|                开启FTP                |                FTP关闭状态切换Wifi                |               FTP开启状态下切换Wifi               |
+| :-----------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
+| <img src="README_images\开启FTP.gif"> | <img src="README_images\FTP关闭状态切换Wifi.gif"> | <img src="README_images\FTP开启状态切换Wifi.gif"> |
+
+
 
