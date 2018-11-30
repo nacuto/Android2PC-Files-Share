@@ -117,9 +117,30 @@
 
 #### 11/30 工作总结
 
+**完成部分：**
+
+1. 学习了MVP架构，并以此架构编写毕业设计
+
+   <center><img src="README_images\MVP.png"><img src="README_images\mvp1.png"></center>
+
+2. 基本完成了FTP demo，实现的功能如下：
+
+   1. 根据wifi情况自动获取ip，并提示用户
+   2. 开启与关闭FTP
 |                开启FTP                |                FTP关闭状态切换Wifi                |               FTP开启状态下切换Wifi               |
 | :-----------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
 | <img src="README_images\开启FTP.gif"> | <img src="README_images\FTP关闭状态切换Wifi.gif"> | <img src="README_images\FTP开启状态切换Wifi.gif"> |
 
+**下一次完成部分**
 
+1. 编写配置界面，设置口令密码、端口、传输速率等
 
+2. 添加自定义共享文件夹功能
+
+   1. ftp是以一个目录作为服务器的根目录，而不能设置选取多个文件夹作为共享目录
+
+   2. 可以尝试使用类似于Windows的快捷方式方法，将需要共享的文件夹创建快捷方式放在服务器根目录
+
+      <img src="README_images\自定义共享文件夹解决方案.png">
+
+3. 重新设计MainActivity，以适配第二个功能
