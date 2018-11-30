@@ -15,9 +15,9 @@
 
         ftpserver.user.admin.idletime=3000\n
 
-        ftpserver.user.admin.uploadrate=4800\n
+        ftpserver.user.admin.uploadrate=480000\n
 
-        ftpserver.user.admin.downloadrate=4800\n
+        ftpserver.user.admin.downloadrate=480000\n
 
         ftpserver.user.anonymous.userpassword=\n
 

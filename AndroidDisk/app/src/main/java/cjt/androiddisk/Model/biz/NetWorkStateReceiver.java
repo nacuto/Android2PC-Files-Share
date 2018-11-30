@@ -23,7 +23,6 @@ public class NetWorkStateReceiver extends BroadcastReceiver{
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        System.out.println("网络状态发生变化");
 
         ConnectivityManager connMgr =
                 (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -31,6 +30,9 @@ public class NetWorkStateReceiver extends BroadcastReceiver{
         NetworkInfo wifiConnInf = connMgr.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
         // 获取所连接wifi的信息
         WifiManager wifiMgr = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
+
+        if (wifiConnInf.isConnected()) System.out.println("连接上"+wifiMgr.getConnectionInfo().getSSID());
+        else System.out.println("断开wifi");
 
         mPresenter.onNetWorkStateChange(wifiConnInf,wifiMgr);
     }

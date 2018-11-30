@@ -117,5 +117,5 @@
 
 #### 11/30 工作总结
 
-
+<img src="README_images\开启FTP.gif">
 

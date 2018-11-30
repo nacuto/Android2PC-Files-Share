@@ -21,6 +21,7 @@ public class MainActivityPresenter {
     private PermissionBiz permissionBiz;
     private FtpBiz ftpBiz;
     private IMainActivity mainActivity;
+    WifiInfo wifiInfo;
 
 
     public MainActivityPresenter(MainActivity activity){
@@ -28,6 +29,7 @@ public class MainActivityPresenter {
         this.mainActivity = activity;
         permissionBiz = new PermissionBiz(this.activity);
         ftpBiz = new FtpBiz(this.activity);
+        wifiInfo = new WifiInfo();
     }
 
     public void verifyPermission(){
@@ -36,15 +38,30 @@ public class MainActivityPresenter {
 
 
     public void startFtpServer(){
-        ftpBiz.createConfigFile();
+        new Thread(){
+            @Override
+            public void run() {
+                ftpBiz.createConfigFile();
+                ftpBiz.startFtpServer(wifiInfo.getIpv4());
+//                System.out.println("start Ftp thread over");
+            }
+        }.start();
+
     }
 
     public void stopFtpServer(){
+        new Thread(){
+            @Override
+            public void run() {
+                ftpBiz.stopFtpServer();
+//                System.out.println("stop Ftp thread over");
+            }
+        }.start();
 
     }
 
     public void onNetWorkStateChange(NetworkInfo wifiConnInf, WifiManager wifiMgr){
-        WifiInfo wifiInfo = new WifiInfo();
+        wifiInfo = new WifiInfo();
         wifiInfo.setConnected(wifiConnInf.isConnected());
         wifiInfo.setSID(wifiMgr.getConnectionInfo().getSSID());
         int ipInt = wifiMgr.getConnectionInfo().getIpAddress();

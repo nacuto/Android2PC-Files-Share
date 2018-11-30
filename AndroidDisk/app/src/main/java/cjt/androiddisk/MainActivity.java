@@ -89,11 +89,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.switchBtn:
                 switch (state){
                     case CLOSED:
-                        mPresenter.startFtpServer();
+
                         openState();
                         break;
                     case OPEN:
-                        mPresenter.stopFtpServer();
                         closedState();
                         break;
                 }
@@ -116,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void stopFtpServer() {
-
+        mPresenter.stopFtpServer();
     }
 
     @Override
@@ -143,6 +142,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         configBtn.setEnabled(true);
         closedHintTV.setVisibility(View.VISIBLE);
         openHintLL.setVisibility(View.GONE);
+        stopFtpServer();
     }
 
     @Override
@@ -153,6 +153,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         closedHintTV.setVisibility(View.GONE);
         openHintLL.setVisibility(View.VISIBLE);
         ipAddressTV.setText("ftp://"+hostIp+":8090/");
+        startFtpServer();
     }
 
     @Override
@@ -162,7 +163,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         configBtn.setEnabled(true);
         closedHintTV.setVisibility(View.VISIBLE);
         openHintLL.setVisibility(View.GONE);
-
+        stopFtpServer();
     }
 
 

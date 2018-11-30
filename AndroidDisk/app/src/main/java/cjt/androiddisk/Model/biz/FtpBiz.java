@@ -1,6 +1,10 @@
 package cjt.androiddisk.Model.biz;
 
 import org.apache.ftpserver.FtpServer;
+import org.apache.ftpserver.FtpServerFactory;
+import org.apache.ftpserver.ftplet.FtpException;
+import org.apache.ftpserver.listener.ListenerFactory;
+import org.apache.ftpserver.usermanager.PropertiesUserManagerFactory;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -45,11 +49,28 @@ public class FtpBiz implements IFtpBiz{
 
     @Override
     public void startFtpServer(String ip) {
-
+        FtpServerFactory ftpServerFactory = new FtpServerFactory();
+        PropertiesUserManagerFactory userManagerFactory = new PropertiesUserManagerFactory();
+        ListenerFactory listenerFactory = new ListenerFactory();
+        //设置配置文件
+        userManagerFactory.setFile(new File(filename));
+        ftpServerFactory.setUserManager(userManagerFactory.createUserManager());
+        // 设置监听IP和端口号
+        listenerFactory.setPort(port);
+        listenerFactory.setServerAddress(ip);
+        ftpServerFactory.addListener("default",listenerFactory.createListener());
+        // 开启FTP服务
+        ftpServer = ftpServerFactory.createServer();
+        try {
+            ftpServer.start();
+        } catch (FtpException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void stopFtpServer() {
-
+        if (ftpServer!=null) ftpServer.stop();
+        ftpServer=null;
     }
 }

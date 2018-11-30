@@ -7,19 +7,16 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.Button;
-
-import java.lang.reflect.Field;
+import android.widget.TextView;
 
 /**
  * Created by CJT on 2018/11/27.
  */
 
-public class ConfigActivity extends AppCompatActivity {
+public class ConfigActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button backBtn;
+//    private Button unSaveBtn,saveBtn;
+    private TextView unSaveBtn,saveBtn;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,8 +36,25 @@ public class ConfigActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        backBtn = (Button)findViewById(R.id.backBtn);
-            backBtn.setTypeface(Typeface.createFromAsset(getAssets(),"iconfont/iconfont.ttf"));
+        unSaveBtn = (TextView) findViewById(R.id.unSaveBtn);
+            unSaveBtn.setTypeface(Typeface.createFromAsset(getAssets(),"iconfont/iconfont.ttf"));
+            unSaveBtn.setOnClickListener(this);
+        saveBtn = (TextView) findViewById(R.id.saveBtn);
+            saveBtn.setTypeface(Typeface.createFromAsset(getAssets(),"iconfont/iconfont.ttf"));
+            saveBtn.setOnClickListener(this);
+    }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.unSaveBtn:
+
+                finish();
+                break;
+            case R.id.saveBtn:
+
+                finish();
+                break;
+        }
     }
 }
