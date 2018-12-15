@@ -35,7 +35,7 @@
 
 1. 学习了MVP架构，并以此架构编写毕业设计
 
-   <center><img src="README_images\MVP.png"><img src="README_images\mvp1.png"></center>
+   <center><img src="README_images\MVP.png" style="zoom:50%"><img src="README_images\mvp1.png" style="zoom:50%"></center>
 
 2. 基本完成了FTP demo，实现的功能如下：
 
