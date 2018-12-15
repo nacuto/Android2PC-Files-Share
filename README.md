@@ -44,7 +44,7 @@
 
    |                开启FTP                |                FTP关闭状态切换Wifi                |               FTP开启状态下切换Wifi               |
    | :-----------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
-   | <img src="README_images\开启FTP.gif"> | <img src="README_images\FTP关闭状态切换Wifi.gif"> | <img src="README_images\FTP开启状态切换Wifi.gif"> |
+   | <img src="README_images\开启FTP.gif"> | <img src="README_images\FTP关闭状态切换Wifi.gif" style="zoom:50%"> | <img src="README_images\FTP开启状态切换Wifi.gif" style="zoom:50%"> |
 
 　**下一次完成部分**
 
@@ -88,7 +88,7 @@
 - 由于具有上述的问题，通过查阅资料，发现解决这些问题的一些方案
   - 【Unix Like机器之间】在 Unix Like 的机器上，互相之间可以使用NFS(NetworkFile System)，在Client端挂载Server端提供的分享目录，即可在Client直接取用分享目录上的档案数据，该分享目录就像Client上的分区一般取用方便。
   - 【Windows机器之间】在Windows的机器上，则使用CIFS(CommonInternet File System)，即网上邻居，来分享别人提供的档案数据。
-  - 【Unix Like机器与Windows机器之间】可以使用Samba服务，实现让Unix Like系统与Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协议进行链接。
+  - 【Unix Like机器与Windows机器之间】可以使用Samba服务，实现让Unix Like系统与Windows操作系统的SMB/CIFS(Server Message Block/Common Internet File System)网络协议进行链接。
 - 使用Samba服务，在Android上搭建Samba服务器，局域网内在Windows连接服务器，可以解决上述提到的两个问题
   - Samba服务支持设置多个共享目录
   - Samba服务能够在Windows十分方便的对Android端文件取用，真正意义上实现“挂载”。
