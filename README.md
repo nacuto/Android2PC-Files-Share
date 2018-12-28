@@ -35,14 +35,14 @@
 
    1. FTP协议在传输上比较方便
 
-   2. 然而FTP在打开文件时会走HTTP协议，即无法直接在Client(Android)端打开，比较不方便
+   2. 然而FTP在打开文件时会走HTTP协议，即无法直接在Client(Windows)端打开，比较不方便
 
-      |          打开pdf等浏览器支持的文件           |         打开excel等浏览器不支持的文件          |
-      | :------------------------------------------: | :--------------------------------------------: |
-      | <img src="README_images\FTP打开pdf文件.png"> | <img src="README_images\FTP打开excel文件.png"> |
-      |     直接在浏览器打开，且不能修改打开方式     |                 在浏览器中下载                 |
+      |             打开pdf等浏览器支持的文件             |            打开excel等浏览器不支持的文件            |
+      | :-----------------------------------------------: | :-------------------------------------------------: |
+      | <img src="docs\README_images\FTP打开pdf文件.png"> | <img src="docs\README_images\FTP打开excel文件.png"> |
+      |       直接在浏览器打开，且不能修改打开方式        |                   在浏览器中下载                    |
 
-   3. 且FTP协议不能直接修改Server(Android)上的文件，除非先拷到Client(Windows)端修改，再回传到Server(Android)端，修改方面也不方便
+   3. 且FTP协议不能直接修改Server(Android)端上的文件，除非先拷到Client(Windows)端修改，再回传到Server(Android)端，修改方面也不方便
 
    这不符合“挂载”的需求，于是想到是否能放弃FTP这个解决方案，转而使用别的解决方案。
 
@@ -66,10 +66,10 @@
 
 4. `LAN drive`的使用较为流畅，验证确实可以解决上述发现的问题
 
-   |                    使用了多个目录                    |               可以方便的添加共享文件夹               |                    方便的取用                    |
-   | :--------------------------------------------------: | :--------------------------------------------------: | :----------------------------------------------: |
-   | <img src="README_images\LAN drive 使用多个目录.png"> | <img src="README_images\LAN drive 添加多个目录.png"> | <img src="README_images\LAN drive 方便取用.png"> |
-   |       打开共享根目录目录即为多个共享文件夹目录       |             可以方便的添加多个共享文件夹             |       可以使用Windows端的各个软件打开取用        |
+   |                      使用了多个目录                       |                 可以方便的添加共享文件夹                  |                      方便的取用                       |
+   | :-------------------------------------------------------: | :-------------------------------------------------------: | :---------------------------------------------------: |
+   | <img src="docs\README_images\LAN drive 使用多个目录.png"> | <img src="docs\README_images\LAN drive 添加多个目录.png"> | <img src="docs\README_images\LAN drive 方便取用.png"> |
+   |         打开共享根目录目录即为多个共享文件夹目录          |               可以方便的添加多个共享文件夹                |          可以使用Windows端的各个软件打开取用          |
 
 　**后续的工作**
 
@@ -82,16 +82,16 @@
 
 1. 学习了MVP架构，并以此架构编写毕业设计
 
-   <center><img src="README_images\MVP.png" style="zoom:50%"><img src="README_images\mvp1.png" style="zoom:50%"></center>
+   <center><img src="docs\README_images\MVP.png" style="zoom:50%"><img src="docs\README_images\mvp1.png" style="zoom:50%"></center>
 
 2. 基本完成了FTP demo，实现的功能如下：
 
    1. 根据wifi情况自动获取ip，并提示用户
    2. 开启与关闭FTP
 
-   |                开启FTP                |                FTP关闭状态切换Wifi                |               FTP开启状态下切换Wifi               |
-   | :-----------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
-   | <img src="README_images\开启FTP.gif"> | <img src="README_images\FTP关闭状态切换Wifi.gif" style="zoom:50%"> | <img src="README_images\FTP开启状态切换Wifi.gif" style="zoom:50%"> |
+   |                  开启FTP                   |                     FTP关闭状态切换Wifi                      |                    FTP开启状态下切换Wifi                     |
+   | :----------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+   | <img src="docs\README_images\开启FTP.gif"> | <img src="docs\README_images\FTP关闭状态切换Wifi.gif" style="zoom:50%"> | <img src="docs\README_images\FTP开启状态切换Wifi.gif" style="zoom:50%"> |
 
 　**下一次完成部分**
 
@@ -103,7 +103,7 @@
 
    2. 可以尝试使用类似于Windows的快捷方式方法，将需要共享的文件夹创建快捷方式放在服务器根目录
 
-      <img src="README_images\自定义共享文件夹解决方案.png">
+      <img src="docs\README_images\自定义共享文件夹解决方案.png">
 
 3. 重新设计MainActivity，以适配第二个功能
 
@@ -150,9 +150,9 @@
 
 1. 基本界面
 
-   |                        Android端                         |                           PC端                            |
-   | :------------------------------------------------------: | :-------------------------------------------------------: |
-   | <img src="README_images/基本界面1.png" style="zoom:10%"> | <img src="README_images/基本界面2.png" style="zoom:200%"> |
+   |                          Android端                           |                             PC端                             |
+   | :----------------------------------------------------------: | :----------------------------------------------------------: |
+   | <img src="docs\README_images/基本界面1.png" style="zoom:10%"> | <img src="docs\README_images/基本界面2.png" style="zoom:200%"> |
 
 2. 具体功能
 

@@ -1,0 +1,10 @@
+- port
+- isAnonymous
+	- user
+	- password
+- writePermission
+
+- advanced
+	- maxLoginNum
+	- transRate
+
