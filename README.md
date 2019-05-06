@@ -33,11 +33,15 @@
 
 　　**配置**
 
-
+<center></center>
 
 
 
 　　**电脑端**
+
+|                  程序窗口                   |                  托盘图标                   |                  点击开始                   |
+| :-----------------------------------------: | :-----------------------------------------: | :-----------------------------------------: |
+| <img src="docs\README_images\WinForm1.png"> | <img src="docs\README_images\WinForm2.png"> | <img src="docs\README_images\WinForm3.png"> |
 
 
 
