@@ -1,0 +1,9 @@
+c:\users\cjt\documents\visual studio 2015\Projects\AndroidDisk\AndroidDisk\bin\Debug\AndroidDisk.exe.config
+c:\users\cjt\documents\visual studio 2015\Projects\AndroidDisk\AndroidDisk\bin\Debug\AndroidDisk.exe
+c:\users\cjt\documents\visual studio 2015\Projects\AndroidDisk\AndroidDisk\bin\Debug\AndroidDisk.pdb
+c:\users\cjt\documents\visual studio 2015\Projects\AndroidDisk\AndroidDisk\obj\Debug\AndroidDisk.csprojResolveAssemblyReference.cache
+c:\users\cjt\documents\visual studio 2015\Projects\AndroidDisk\AndroidDisk\obj\Debug\AndroidDisk.Properties.Resources.resources
+c:\users\cjt\documents\visual studio 2015\Projects\AndroidDisk\AndroidDisk\obj\Debug\AndroidDisk.csproj.GenerateResource.Cache
+c:\users\cjt\documents\visual studio 2015\Projects\AndroidDisk\AndroidDisk\obj\Debug\AndroidDisk.exe
+c:\users\cjt\documents\visual studio 2015\Projects\AndroidDisk\AndroidDisk\obj\Debug\AndroidDisk.pdb
+C:\Users\CJT\documents\visual studio 2015\Projects\AndroidDisk\AndroidDisk\obj\Debug\AndroidDisk.Form1.resources
