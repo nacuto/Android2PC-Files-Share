@@ -33,7 +33,7 @@
 
 　　**配置**
 
-<img src="docs\README_images\配置.gif" style="zoom:10%">
+<img src="docs\README_images\配置.gif" style="zoom:1%">
 
 
 
